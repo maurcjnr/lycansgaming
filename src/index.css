@@ -51,34 +51,54 @@ body {
   background-color: RGB(29, 161, 243);
   font-family: "Roboto", serif; }
 
-.Home {
+.home {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
-  .Home .ComingSoon {
+  .home_coming-soon {
     font-weight: bold;
     font-size: 1.2em;
     color: #fff; }
-  .Home .Image {
-    width: 280px;
-    height: 300px;
-    margin: 20px 0 0 0;
+  .home_image {
+    width: 250px;
+    height: 270px;
+    margin: 20px 0 20px 0;
     background-image: url("./images/lycansgaming.png");
     background-repeat: no-repeat;
     background-size: contain; }
-  .Home .Loader {
+  .home_loader {
     height: 50px;
     width: 50px;
-    margin: 20px 0 0 0;
+    margin: 0 auto;
     border: 8px solid rgba(0, 0, 0, 0.1);
     border-left-color: #fff;
     border-radius: 50%;
-    animation: spin 1s linear infinite;
-    position: relative;
-    right: 50%;
-    left: 40%; }
+    animation: spin 1s linear infinite; }
+  .home_social {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center; }
+    .home_social_facebook {
+      height: 48px;
+      width: 48px;
+      background-image: url("./images/facebook.png");
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .home_social_instagram {
+      margin: 0 20px 0 20px;
+      height: 48px;
+      width: 48px;
+      background-image: url("./images/instagram.png");
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .home_social_twitter {
+      height: 48px;
+      width: 48px;
+      background-image: url("./images/twitter.png");
+      background-repeat: no-repeat;
+      background-size: contain; }
 
 @keyframes spin {
   to {
