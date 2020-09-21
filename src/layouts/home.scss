@@ -1,0 +1,43 @@
+body {
+    background-color: RGB(29, 161, 243);
+    font-family: $roboto;
+}
+
+.Home {
+    @include center;
+    text-align: center;
+
+    .ComingSoon {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #fff;
+    }
+
+    .Image {
+        width: 280px;
+        height: 300px;
+        margin: 20px 0 0 0;
+        background-image: url("./images/lycansgaming.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .Loader {
+        height: 50px;
+        width: 50px;
+        margin: 20px 0 0 0;
+        border: 8px solid rgba(0, 0, 0, 0.1);
+        border-left-color: #fff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        position: relative;
+        right: 50%;
+        left: 40%;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

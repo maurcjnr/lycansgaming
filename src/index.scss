@@ -1,0 +1,12 @@
+// Base
+@import "base/reset";
+
+// Helpers
+@import "helpers/mixins";
+@import "helpers/placeholders";
+@import "helpers/variables";
+
+// Layouts
+@import "layouts/about.scss";
+@import "layouts/contact.scss";
+@import "layouts/home.scss";
