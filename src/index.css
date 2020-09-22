@@ -4,6 +4,7 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,48 +58,54 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
-  .home_coming-soon {
+  .home__coming-soon {
     font-weight: bold;
     font-size: 1.2em;
     color: #fff; }
-  .home_image {
+  .home__image {
     width: 250px;
     height: 270px;
     margin: 20px 0 20px 0;
     background-image: url("./images/lycansgaming.png");
     background-repeat: no-repeat;
     background-size: contain; }
-  .home_loader {
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-    border: 8px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #fff;
-    border-radius: 50%;
-    animation: spin 1s linear infinite; }
-  .home_social {
+  .home__social {
     margin: 20px 0 0 0;
     display: flex;
     justify-content: center; }
-    .home_social_facebook {
-      height: 48px;
-      width: 48px;
-      background-image: url("./images/facebook.png");
-      background-repeat: no-repeat;
-      background-size: contain; }
-    .home_social_instagram {
-      margin: 0 20px 0 20px;
-      height: 48px;
-      width: 48px;
+    .home__social__instagram {
       background-image: url("./images/instagram.png");
-      background-repeat: no-repeat;
-      background-size: contain; }
-    .home_social_twitter {
       height: 48px;
       width: 48px;
-      background-image: url("./images/twitter.png");
+      margin: 0 10px;
+      border-radius: 100%;
       background-repeat: no-repeat;
       background-size: contain; }
+      .home__social__instagram:hover {
+        box-shadow: 0 0 10px 0 black; }
+    .home__social__twitch {
+      background-image: url("./images/twitch.png");
+      height: 48px;
+      width: 48px;
+      margin: 0 10px;
+      border-radius: 100%;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      .home__social__twitch:hover {
+        box-shadow: 0 0 10px 0 black; }
+    .home__social__twitter {
+      background-image: url("./images/twitter.png");
+      height: 48px;
+      width: 48px;
+      margin: 0 10px;
+      border-radius: 100%;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      .home__social__twitter:hover {
+        box-shadow: 0 0 10px 0 black; }
+  .home__contact {
+    margin: 20px 0 0 0;
+    color: #fff; }
 
 @keyframes spin {
   to {

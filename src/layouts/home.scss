@@ -7,13 +7,13 @@ body {
     @include center;
     text-align: center;
 
-    &_coming-soon {
+    &__coming-soon {
         font-weight: bold;
         font-size: 1.2em;
         color: #fff;
     }
 
-    &_image {
+    &__image {
         width: 250px;
         height: 270px;
         margin: 20px 0 20px 0;
@@ -22,45 +22,30 @@ body {
         background-size: contain;
     }
 
-    &_loader {
-        height: 50px;
-        width: 50px;
-        margin: 0 auto;
-        border: 8px solid rgba(0, 0, 0, 0.1);
-        border-left-color: #fff;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-    }
-
-    &_social {
+    &__social {
         margin: 20px 0 0 0;
         display: flex;
         justify-content: center;
 
-        &_facebook {
-            height: 48px;
-            width: 48px;
-            background-image: url("./images/facebook.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-
-        &_instagram {
-            margin: 0 20px 0 20px;
-            height: 48px;
-            width: 48px;
+        &__instagram {
             background-image: url("./images/instagram.png");
-            background-repeat: no-repeat;
-            background-size: contain;
+            @include button-social-media;
         }
 
-        &_twitter {
-            height: 48px;
-            width: 48px;
-            background-image: url("./images/twitter.png");
-            background-repeat: no-repeat;
-            background-size: contain;
+        &__twitch {
+            background-image: url("./images/twitch.png");
+            @include button-social-media;
         }
+
+        &__twitter {
+            background-image: url("./images/twitter.png");
+            @include button-social-media;
+        }
+    }
+
+    &__contact {
+        margin: 20px 0 0 0;
+        color: #fff;
     }
 }
 

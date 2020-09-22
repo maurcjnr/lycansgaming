@@ -4,3 +4,16 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin button-social-media {
+    height: 48px;
+    width: 48px;
+    margin: 0 10px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &:hover {
+        box-shadow: 0 0 10px 0 black;
+    }
+}
